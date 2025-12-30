@@ -163,6 +163,28 @@ body {
   font-size: 15px;
 }
 
+/* Page visibility */
+.page {
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+  padding-bottom: 70px; /* for bottom nav spacing */
+}
+
+.page.active {
+  display: block;
+}
+
+/* Page Content Styling */
+.page-content {
+  padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
 .nav-item:hover {
   color: #FFB500;
 }
