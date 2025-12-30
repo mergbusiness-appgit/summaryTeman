@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeMan Wellness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>TeMan Wellness</h1>
+  <div class="menu">⋮</div>
+</div>
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search therapists, packages...">
+</div>
+
+<!-- Explore Cards -->
+<div class="card-list">
+  <div class="card" onclick="openPage('therapists')">
+    <div class="left">
+      <div class="emoji-circle" style="background: #FFB50033;">🧑‍⚕️</div>
+      <div>Therapists</div>
+    </div>
+    <div class="arrow">&gt;</div>
+  </div>
+
+  <div class="card" onclick="openPage('commission')">
+    <div class="left">
+      <div class="emoji-circle" style="background: #00BFFF33;">💰</div>
+      <div>Therapist Commission</div>
+    </div>
+    <div class="arrow">&gt;</div>
+  </div>
+
+  <div class="card" onclick="openPage('recommendation')">
+    <div class="left">
+      <div class="emoji-circle" style="background: #FF69B433;">⭐</div>
+      <div>Our Recommendation</div>
+    </div>
+    <div class="arrow">&gt;</div>
+  </div>
+</div>
+
+<!-- Activity Section -->
+<div class="activity">
+  <h2>Top Therapists</h2>
+  <div class="top-therapists">
+    <div class="top-therapist">Alice</div>
+    <div class="top-therapist">Bob</div>
+    <div class="top-therapist">Charlie</div>
+    <div class="top-therapist">Diana</div>
+  </div>
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <div class="nav-item active">Home</div>
+  <div class="nav-item">Summary</div>
+  <div class="nav-item">Package</div>
+  <div class="nav-item">Profile</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
