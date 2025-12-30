@@ -19,12 +19,10 @@
 
   <!-- Home Page -->
   <div class="page active" id="homePage">
-    <!-- Search Bar -->
     <div class="search-bar">
       <input type="text" id="searchInput" placeholder="Search therapists, packages...">
     </div>
 
-    <!-- Explore Cards -->
     <div class="card-list">
       <div class="card" onclick="openPage('therapists')">
         <div class="left">
@@ -51,7 +49,6 @@
       </div>
     </div>
 
-    <!-- Activity Section -->
     <div class="activity">
       <h2>Top Therapists</h2>
       <div class="top-therapists">
@@ -91,10 +88,22 @@
 
 <!-- Bottom Navigation -->
 <div class="bottom-nav">
-  <div class="nav-item active" data-page="homePage">Home</div>
-  <div class="nav-item" data-page="summaryPage">Summary</div>
-  <div class="nav-item" data-page="packagePage">Package</div>
-  <div class="nav-item" data-page="profilePage">Profile</div>
+  <div class="nav-item active" data-page="homePage">
+    <div class="nav-icon">🏠</div>
+    <div class="nav-label">Home</div>
+  </div>
+  <div class="nav-item" data-page="summaryPage">
+    <div class="nav-icon">📊</div>
+    <div class="nav-label">Summary</div>
+  </div>
+  <div class="nav-item" data-page="packagePage">
+    <div class="nav-icon">📦</div>
+    <div class="nav-label">Package</div>
+  </div>
+  <div class="nav-item" data-page="profilePage">
+    <div class="nav-icon">👤</div>
+    <div class="nav-label">Profile</div>
+  </div>
 </div>
 
 <script src="script.js"></script>
