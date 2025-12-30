@@ -10,59 +10,91 @@
 
 <!-- Header -->
 <div class="header">
-  <h1>TeMan Wellness</h1>
+  <h1 id="pageTitle">TeMan Wellness</h1>
   <div class="menu">⋮</div>
 </div>
 
-<!-- Search Bar -->
-<div class="search-bar">
-  <input type="text" id="searchInput" placeholder="Search therapists, packages...">
-</div>
+<!-- Pages -->
+<div id="pages">
 
-<!-- Explore Cards -->
-<div class="card-list">
-  <div class="card" onclick="openPage('therapists')">
-    <div class="left">
-      <div class="emoji-circle" style="background: #FFB50033;">🧑‍⚕️</div>
-      <div>Therapists</div>
+  <!-- Home Page -->
+  <div class="page active" id="homePage">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search therapists, packages...">
     </div>
-    <div class="arrow">&gt;</div>
-  </div>
 
-  <div class="card" onclick="openPage('commission')">
-    <div class="left">
-      <div class="emoji-circle" style="background: #00BFFF33;">💰</div>
-      <div>Therapist Commission</div>
+    <!-- Explore Cards -->
+    <div class="card-list">
+      <div class="card" onclick="openPage('therapists')">
+        <div class="left">
+          <div class="emoji-circle" style="background: #FFB50033;">🧑‍⚕️</div>
+          <div>Therapists</div>
+        </div>
+        <div class="arrow">&gt;</div>
+      </div>
+
+      <div class="card" onclick="openPage('commission')">
+        <div class="left">
+          <div class="emoji-circle" style="background: #00BFFF33;">💰</div>
+          <div>Therapist Commission</div>
+        </div>
+        <div class="arrow">&gt;</div>
+      </div>
+
+      <div class="card" onclick="openPage('recommendation')">
+        <div class="left">
+          <div class="emoji-circle" style="background: #FF69B433;">⭐</div>
+          <div>Our Recommendation</div>
+        </div>
+        <div class="arrow">&gt;</div>
+      </div>
     </div>
-    <div class="arrow">&gt;</div>
-  </div>
 
-  <div class="card" onclick="openPage('recommendation')">
-    <div class="left">
-      <div class="emoji-circle" style="background: #FF69B433;">⭐</div>
-      <div>Our Recommendation</div>
+    <!-- Activity Section -->
+    <div class="activity">
+      <h2>Top Therapists</h2>
+      <div class="top-therapists">
+        <div class="top-therapist">Alice</div>
+        <div class="top-therapist">Bob</div>
+        <div class="top-therapist">Charlie</div>
+        <div class="top-therapist">Diana</div>
+      </div>
     </div>
-    <div class="arrow">&gt;</div>
   </div>
-</div>
 
-<!-- Activity Section -->
-<div class="activity">
-  <h2>Top Therapists</h2>
-  <div class="top-therapists">
-    <div class="top-therapist">Alice</div>
-    <div class="top-therapist">Bob</div>
-    <div class="top-therapist">Charlie</div>
-    <div class="top-therapist">Diana</div>
+  <!-- Summary Page -->
+  <div class="page" id="summaryPage">
+    <div class="page-content">
+      <h2>Summary</h2>
+      <p>Your performance summary and statistics will appear here.</p>
+    </div>
   </div>
+
+  <!-- Package Page -->
+  <div class="page" id="packagePage">
+    <div class="page-content">
+      <h2>Package</h2>
+      <p>View and manage your wellness packages here.</p>
+    </div>
+  </div>
+
+  <!-- Profile Page -->
+  <div class="page" id="profilePage">
+    <div class="page-content">
+      <h2>Profile</h2>
+      <p>Manage your profile and settings here.</p>
+    </div>
+  </div>
+
 </div>
 
 <!-- Bottom Navigation -->
 <div class="bottom-nav">
-  <div class="nav-item active">Home</div>
-  <div class="nav-item">Summary</div>
-  <div class="nav-item">Package</div>
-  <div class="nav-item">Profile</div>
+  <div class="nav-item active" data-page="homePage">Home</div>
+  <div class="nav-item" data-page="summaryPage">Summary</div>
+  <div class="nav-item" data-page="packagePage">Package</div>
+  <div class="nav-item" data-page="profilePage">Profile</div>
 </div>
 
 <script src="script.js"></script>
